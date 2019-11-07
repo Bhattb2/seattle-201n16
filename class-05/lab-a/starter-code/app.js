@@ -38,7 +38,7 @@ function multiply(num1, num2) { //eslint-disable-line
     var wordString = 'The product of ' + num1 + ' and ' + num2 + ' is ' + numbers + '.';
     var newArray2 = [numbers, wordString];
     return newArray2;
-=======
+
     
 }
 
