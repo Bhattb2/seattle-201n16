@@ -34,6 +34,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(num1, num2) { //eslint-disable-line
+    var numbers = num1 * num2;
+    var wordString = 'The product of ' + num1 + ' and ' + num2 + ' is ' + numbers + '.';
+    var newArray2 = [numbers, wordString];
+    return newArray2;
+=======
     
 }
 
