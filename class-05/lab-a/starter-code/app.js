@@ -34,12 +34,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(num1, num2) { //eslint-disable-line
-    var numbers = num1 * num2;
-    var wordString = 'The product of ' + num1 + ' and ' + num2 + ' is ' + numbers + '.';
-    var newArray2 = [numbers, wordString];
+    var numbers2 = num1 * num2;
+    var wordString = 'The product of ' + num1 + ' and ' + num2 + ' is ' + numbers2 + '.';
+    var newArray2 = [numbers2, wordString];
     return newArray2;
-
-    
+  
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -60,11 +59,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+     var sumABC = sum(a,b);
+     var sumAbcTwo = sum(sumABC[0],c);
+     var productABC = multiply(a, b);
+     var productAb = multiply(productABC[0], c); 
+     var wordString = a + ' and ' + b + ' and ' + c + ' sum to ' + sumAbcTwo[0] + '.';
+     var wordString2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productAb[0] + '.';
+     var newArray3 = [sumAbcTwo[0], productAb[0], wordString, wordString2];
+     console.log(newArray3);
+     return newArray3;
 
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
